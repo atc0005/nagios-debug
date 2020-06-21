@@ -10,6 +10,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"sort"
 
 	"github.com/atc0005/go-nagios"
 )
@@ -33,7 +34,15 @@ func main() {
 
 	fmt.Printf("Environment variables:\r\n\r\n")
 
-	for _, e := range os.Environ() {
+	origEnvVars := os.Environ()
+	sortedEnvVars := make([]string, len(origEnvVars))
+	copy(sortedEnvVars, origEnvVars)
+
+	sort.Slice(sortedEnvVars, func(i, j int) bool {
+		return sortedEnvVars[i] < sortedEnvVars[j]
+	})
+
+	for _, e := range sortedEnvVars {
 		fmt.Println(e)
 	}
 
