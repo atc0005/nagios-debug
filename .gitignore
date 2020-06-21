@@ -1,0 +1,22 @@
+# Copyright 2020 Adam Chalkley
+#
+# https://github.com/atc0005/nagios-debug
+#
+# Licensed under the MIT License. See LICENSE file in the project root for
+# full license information.
+
+# Windows binaries
+*.exe
+
+# Linux binaries
+/debug
+
+# Local Visual Studio Code editor settings (e.g., ignored words for Spelling extension)
+/.vscode
+
+# Generated binaries, checksums
+/release_assets
+
+# Local test files, notes and other information not intended to be stored
+# in this repo.
+/scratch
