@@ -26,6 +26,16 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.1] - 2020-06-21
+
+### Added
+
+- Sort environment variables before listing them
+
+### Fixed
+
+- Newlines are incorrectly interpreted by Nagios
+
 ## [v0.1.0] - 2020-06-21
 
 Initial release!
@@ -40,5 +50,6 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.1...HEAD
+[v0.1.1]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.0
