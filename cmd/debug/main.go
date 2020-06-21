@@ -17,7 +17,7 @@ import (
 func main() {
 
 	// prepare initial status line
-	statusLineTmpl := "OK: %d environment variables, %d CLI arguments\n\n"
+	statusLineTmpl := "OK: %d environment variables, %d CLI arguments\r\n\r\n"
 
 	numEnvVars := len(os.Environ())
 
@@ -31,19 +31,19 @@ func main() {
 		numCLIArgs,
 	)
 
-	fmt.Printf("Environment variables:\n\n")
+	fmt.Printf("Environment variables:\r\n\r\n")
 
 	for _, e := range os.Environ() {
 		fmt.Println(e)
 	}
 
-	fmt.Printf("\nCLI arguments:\n\n")
+	fmt.Printf("\r\nCLI arguments:\r\n\r\n")
 
 	switch {
 	case numCLIArgs > 1:
 		for num, arg := range os.Args[1:] {
 			fmt.Printf(
-				"Arg %d: %s\n",
+				"Arg %d: %s\r\n",
 				num,
 				arg,
 			)
