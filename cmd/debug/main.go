@@ -62,5 +62,5 @@ func main() {
 	}
 
 	// Assume all is well for now
-	os.Exit(nagios.StateOK)
+	os.Exit(nagios.StateOKExitCode)
 }
