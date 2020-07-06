@@ -26,6 +26,27 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.2] - 2020-07-06
+
+### Changed
+
+- Update dependencies
+  - `actions/setup-go`
+    - `v2.0.3` to `v2.1.0`
+  - `actions/setup-node`
+    - `v2.0.0` to `v2.1.0`
+  - `atc0005/go-nagios`
+    - `v0.2.0` to `v0.3.0`
+
+- Rename binary from `debug` to `check_debug` to match naming pattern used by
+  official plugins and our other Nagios plugins
+
+### Fixed
+
+- skip emission of `NAGIOS_LONGSERVICEOUTPUT` environment variable
+  - this prevents a loop that otherwise occurs when the output from the plugin
+    is captured and displayed again as `NAGIOS_LONGSERVICEOUTPUT` and ...
+
 ## [v0.1.1] - 2020-06-21
 
 ### Added
@@ -50,6 +71,7 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.2...HEAD
+[v0.1.2]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.2
 [v0.1.1]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.0
