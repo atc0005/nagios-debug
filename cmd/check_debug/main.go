@@ -11,11 +11,14 @@ import (
 	"fmt"
 	"os"
 	"sort"
+	"strings"
 
 	"github.com/atc0005/go-nagios"
 )
 
 func main() {
+
+	const NagiosLongServiceOutputEnvVar string = "NAGIOS_LONGSERVICEOUTPUT"
 
 	// prepare initial status line
 	statusLineTmpl := "OK: %d environment variables, %d CLI arguments\r\n\r\n"
@@ -33,6 +36,10 @@ func main() {
 	)
 
 	fmt.Printf("Environment variables:\r\n\r\n")
+	fmt.Printf(
+		"NOTE: Skipping emission of %s to help prevent a loop.\r\n",
+		NagiosLongServiceOutputEnvVar,
+	)
 
 	origEnvVars := os.Environ()
 	sortedEnvVars := make([]string, len(origEnvVars))
@@ -43,6 +50,13 @@ func main() {
 	})
 
 	for _, e := range sortedEnvVars {
+		// skip emission of NAGIOS_LONGSERVICEOUTPUT to prevent a loop
+		if strings.HasPrefix(
+			strings.ToUpper(e),
+			NagiosLongServiceOutputEnvVar,
+		) {
+			continue
+		}
 		fmt.Println(e)
 	}
 
