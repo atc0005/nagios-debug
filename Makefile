@@ -23,7 +23,7 @@
 SHELL = /bin/bash
 
 # Space-separated list of cmd/BINARY_NAME directories to build
-WHAT 					= debug
+WHAT 					= check_debug
 
 # TODO: This will need to be standardized across all cmd files in order to
 # work as intended.

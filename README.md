@@ -100,7 +100,7 @@ official release is also provided for further review.
 1. Build binaries
    - for the current operating system, explicitly using bundled dependencies
          in top-level `vendor` folder
-     - `go build -mod=vendor ./cmd/debug/`
+     - `go build -mod=vendor ./cmd/check_debug/`
    - for all supported platforms (where `make` is installed)
       - `make all`
    - for use on Windows
@@ -111,7 +111,7 @@ official release is also provided for further review.
    (based on the clone instructions in this section) below and deploy where
    needed.
    - if using `Makefile`
-     - look in `/tmp/nagios-debug/debug/`
+     - look in `/tmp/nagios-debug/check_debug/`
    - if using `go build`
      - look in `/tmp/nagios-debug/`
 
