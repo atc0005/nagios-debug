@@ -37,7 +37,7 @@ func main() {
 
 	fmt.Printf("Environment variables:\r\n\r\n")
 	fmt.Printf(
-		"NOTE: Skipping emission of %s to help prevent a loop.\r\n",
+		"NOTE: Skipping emission of %s to help prevent a loop.\r\n\r\n",
 		NagiosLongServiceOutputEnvVar,
 	)
 
