@@ -26,6 +26,72 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.3] - 2020-08-22
+
+### Added
+
+- Docker-based GitHub Actions Workflows
+  - Replace native GitHub Actions with containers created and managed through
+    the `atc0005/go-ci` project.
+
+  - New, primary workflow
+    - with parallel linting, testing and building tasks
+    - with three Go environments
+      - "old stable"
+      - "stable"
+      - "unstable"
+    - Makefile is *not* used in this workflow
+    - staticcheck linting using latest stable version provided by the
+      `atc0005/go-ci` containers
+
+  - Separate Makefile-based linting and building workflow
+    - intended to help ensure that local Makefile-based builds that are
+      referenced in project README files continue to work as advertised until
+      a better local tool can be discovered/explored further
+    - use `golang:latest` container to allow for Makefile-based linting
+      tooling installation testing since the `atc0005/go-ci` project provides
+      containers with those tools already pre-installed
+      - linting tasks use container-provided `golangci-lint` config file
+        *except* for the Makefile-driven linting task which continues to use
+        the repo-provided copy of the `golangci-lint` configuration file
+
+  - Add Quick Validation workflow
+    - run on every push, everything else on pull request updates
+    - linting via `golangci-lint` only
+    - testing
+    - no builds
+
+- Add new README badges for additional CI workflows
+  - each badge also links to the associated workflow results
+
+### Changed
+
+- Disable `golangci-lint` default exclusions
+
+- dependencies
+  - `go.mod` Go version
+    - updated from `1.13` to `1.14`
+  - `actions/setup-go`
+    - updated from `v2.1.0` to `v2.1.2`
+      - since replaced with Docker containers
+  - `actions/setup-node`
+    - updated from `v2.1.0` to `v2.1.1`
+  - `actions/checkout`
+    - updated from `v2.3.1` to `v2.3.2`
+
+- README
+  - Link badges to applicable GitHub Actions workflows results
+
+- Linting
+  - Local
+    - `Makefile`
+      - install latest stable `golangci-lint` binary instead of using a fixed
+          version
+  - CI
+    - remove repo-provided copy of `golangci-lint` config file at start of
+      linting task in order to force use of Docker container-provided config
+      file
+
 ## [v0.1.2] - 2020-07-06
 
 ### Changed
@@ -71,7 +137,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.3...HEAD
+[v0.1.3]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.3
 [v0.1.2]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.2
 [v0.1.1]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.1
 [v0.1.0]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.0
