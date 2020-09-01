@@ -34,8 +34,8 @@ inclusion into the project.
 ## Overview
 
 Nagios plugin used to "echo" back detected environment variables and provided
-CLI flags/values as part of service check output to help troubleshoot
-other/"real" service checks.
+CLI flags/values as part of service check output to help troubleshoot other
+"real" service checks.
 
 ## Features
 
