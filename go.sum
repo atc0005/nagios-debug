@@ -1,2 +1,4 @@
 github.com/atc0005/go-nagios v0.4.0 h1:VpdN9lsRUpwQgG79d4OeLnr3qOLFaX/Gjp5NLLMhPgA=
 github.com/atc0005/go-nagios v0.4.0/go.mod h1:VhzDr2I9+vn/6aDrZ5f7OyfNOFU8MdT7gLzmSSy8be0=
+github.com/atc0005/go-nagios v0.5.1 h1:Unt+obRZKHyx/cLmXaZDccF2fmosSPhRh03MzQSMbSc=
+github.com/atc0005/go-nagios v0.5.1/go.mod h1:VhzDr2I9+vn/6aDrZ5f7OyfNOFU8MdT7gLzmSSy8be0=
