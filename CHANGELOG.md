@@ -26,6 +26,34 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.4] - 2020-10-02
+
+### Added
+
+- Binary release
+  - Built using Go 1.15.2
+  - Windows
+    - x86
+    - x64
+  - Linux
+    - x86
+    - x64
+
+### Changed
+
+- dependencies
+  - `atc0005/go-nagios`
+    - updated from `v0.3.0` to `v0.5.1`
+  - `actions/setup-node`
+    - updated from `v2.1.1` to `v2.1.2`
+  - `actions/checkout`
+    - updated from `v2.3.2` to `v2.3.3`
+
+### Fixed
+
+- Typo in README
+- Makefile generates checksums with qualified path
+
 ## [v0.1.3] - 2020-08-22
 
 ### Added
@@ -137,7 +165,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.4...HEAD
+[v0.1.4]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.4
 [v0.1.3]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.3
 [v0.1.2]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.2
 [v0.1.1]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.1
