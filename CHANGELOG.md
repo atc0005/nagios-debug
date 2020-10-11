@@ -26,6 +26,28 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.5] - 2020-10-11
+
+### Added
+
+- Binary release
+  - Built using Go 1.15.2
+  - **Statically linked**
+  - Windows
+    - x86
+    - x64
+  - Linux
+    - x86
+    - x64
+
+### Changed
+
+- Add `-trimpath` build flag
+
+### Fixed
+
+- Makefile build options do not generate static binaries
+
 ## [v0.1.4] - 2020-10-02
 
 ### Added
@@ -165,7 +187,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.4...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.5...HEAD
+[v0.1.5]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.5
 [v0.1.4]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.4
 [v0.1.3]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.3
 [v0.1.2]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.2
