@@ -1,5 +1,5 @@
 module github.com/atc0005/nagios-debug
 
-go 1.14
+go 1.15
 
 require github.com/atc0005/go-nagios v0.6.0
