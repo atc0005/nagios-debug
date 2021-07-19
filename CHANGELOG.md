@@ -26,6 +26,33 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.8] - 2021-07-19
+
+### Overview
+
+- Dependency updates
+- built using Go 1.16.6
+  - **Statically linked**
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Added
+
+- Add "canary" Dockerfile to track stable Go releases, serve as a reminder to
+  generate fresh binaries
+
+### Changed
+
+- dependencies
+  - `Go`
+    - `1.15.8` to `1.16.6`
+  - `atc0005/go-nagios`
+    - `v0.6.0` to `v0.6.1`
+  - `actions/setup-node`
+    - `v2.1.4` to `v2.2.0`
+    - update `node-version` value to always use latest LTS version instead of
+      hard-coded version
+
 ## [v0.1.7] - 2021-02-21
 
 ### Overview
@@ -226,7 +253,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.7...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.8...HEAD
+[v0.1.8]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.8
 [v0.1.7]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.7
 [v0.1.6]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.6
 [v0.1.5]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.5
