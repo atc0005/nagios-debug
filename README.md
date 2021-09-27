@@ -20,6 +20,8 @@ Small Nagios plugin to return "debug" environment details
   - [Building source code](#building-source-code)
   - [Running](#running)
 - [Installation](#installation)
+  - [From source](#from-source)
+  - [Using release binaries](#using-release-binaries)
 - [Configuration options](#configuration-options)
 - [Examples](#examples)
 - [License](#license)
@@ -27,9 +29,8 @@ Small Nagios plugin to return "debug" environment details
 
 ## Project home
 
-See [our GitHub repo](https://github.com/atc0005/nagios-debug) for the latest
-code, to file an issue or submit improvements for review and potential
-inclusion into the project.
+See [our GitHub repo][repo-url] for the latest code, to file an issue or
+submit improvements for review and potential inclusion into the project.
 
 ## Overview
 
@@ -69,6 +70,8 @@ official release is also provided for further review.
 - Ubuntu Linux 16.04, 18.04
 
 ## Installation
+
+### From source
 
 1. [Download][go-docs-download] Go
 1. [Install][go-docs-install] Go
@@ -116,6 +119,15 @@ official release is also provided for further review.
      - look in `/tmp/nagios-debug/check_debug/`
    - if using `go build`
      - look in `/tmp/nagios-debug/`
+
+### Using release binaries
+
+1. Download the [latest release][repo-url] binaries
+1. Deploy
+   - Place `check_debug` in the same location where your distro's package
+     manager places other Nagios plugins
+     - as `/usr/lib/nagios/plugins/check_whois` on Debian-based systems
+     - as `/usr/lib64/nagios/plugins/check_whois` on RedHat-based systems
 
 ## Configuration options
 
