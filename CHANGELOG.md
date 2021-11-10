@@ -26,6 +26,28 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.11] - 2021-11-10
+
+### Overview
+
+- Dependency updates
+- built using Go 1.16.10
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.16.8` to `1.16.10`
+  - `atc0005/go-nagios`
+    - `v0.7.0` to `v0.8.1`
+  - `actions/checkout`
+    - `v2.3.4` to `v2.4.0`
+  - `actions/setup-node`
+    - `v2.4.0` to `v2.4.1`
+
 ## [v0.1.10] - 2021-09-27
 
 ### Overview
@@ -289,7 +311,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.10...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.11...HEAD
+[v0.1.11]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.11
 [v0.1.10]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.10
 [v0.1.9]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.9
 [v0.1.8]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.8
