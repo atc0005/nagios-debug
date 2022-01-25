@@ -26,6 +26,26 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.13] - 2022-01-25
+
+### Overview
+
+- Dependency updates
+- built using Go 1.17.6
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.16.12` to `1.17.6`
+    - (GH-100) Update go.mod file, canary Dockerfile to reflect current
+      dependencies
+  - `atc0005/go-nagios`
+    - `v0.8.1` to `v0.8.2`
+
 ## [v0.1.12] - 2021-12-29
 
 ### Overview
@@ -329,7 +349,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.12...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.13...HEAD
+[v0.1.13]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.13
 [v0.1.12]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.12
 [v0.1.11]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.11
 [v0.1.10]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.10
