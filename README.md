@@ -17,6 +17,7 @@ Small Nagios plugin to return "debug" environment details
 - [Overview](#overview)
 - [Features](#features)
 - [Changelog](#changelog)
+- [Requirements](#requirements)
   - [Building source code](#building-source-code)
   - [Running](#running)
 - [Installation](#installation)
@@ -53,9 +54,20 @@ but not yet an official release may also be noted in the file under the
 `Unreleased` section. A helpful link to the Git commit history since the last
 official release is also provided for further review.
 
+## Requirements
+
+The following is a loose guideline. Other combinations of Go and operating
+systems for building and running tools from this repo may work, but have not
+been tested.
+
 ### Building source code
 
-- Go 1.13+
+- Go
+  - see this project's `go.mod` file for *preferred* version
+  - this project tests against [officially supported Go
+    releases][go-supported-releases]
+    - the most recent stable release (aka, "stable")
+    - the prior, but still supported release (aka, "oldstable")
 - GCC
   - if building with custom options (as the provided `Makefile` does)
 - `make`
@@ -63,11 +75,8 @@ official release is also provided for further review.
 
 ### Running
 
-- Windows 7, Server 2008R2 or later
-  - per official [Go install notes][go-docs-install]
-- Windows 10 Version 1909
-  - tested
-- Ubuntu Linux 16.04, 18.04
+- Windows 10
+- Ubuntu Linux 18.04+
 
 ## Installation
 
@@ -187,5 +196,7 @@ SOFTWARE.
 [go-docs-download]: <https://golang.org/dl>  "Download Go"
 
 [go-docs-install]: <https://golang.org/doc/install>  "Install Go"
+
+[go-supported-releases]: <https://go.dev/doc/devel/release#policy> "Go Release Policy"
 
 <!-- []: PLACEHOLDER "DESCRIPTION_HERE" -->
