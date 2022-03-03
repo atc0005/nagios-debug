@@ -26,6 +26,32 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.14] - 2022-03-03
+
+### Overview
+
+- Dependency updates
+- CI / linting improvements
+- built using Go 1.17.7
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.17.6` to `1.17.7`
+  - `actions/checkout`
+    - `v2.4.0` to `v3`
+  - `actions/setup-node`
+    - `v2.5.1` to `v3`
+
+- (GH-104) Expand linting GitHub Actions Workflow to include `oldstable`,
+  `unstable` container images
+- (GH-105) Switch Docker image source from Docker Hub to GitHub Container
+  Registry (GHCR)
+
 ## [v0.1.13] - 2022-01-25
 
 ### Overview
@@ -349,7 +375,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.13...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.14...HEAD
+[v0.1.14]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.14
 [v0.1.13]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.13
 [v0.1.12]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.12
 [v0.1.11]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.11
