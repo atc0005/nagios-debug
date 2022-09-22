@@ -26,6 +26,36 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.16] - 2022-09-22
+
+### Overview
+
+- Bug fixes
+- Dependency updates
+- GitHub Actions Workflows updates
+- built using Go 1.19.1
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.17.9` to `1.19.1`
+  - `atc0005/go-nagios`
+    - `v0.8.2` to `v0.10.0`
+  - `github/codeql-action`
+    - `v2.1.22` to `v2.1.24`
+- (GH-124) Update project to Go 1.19
+- (GH-125) Update Makefile and GitHub Actions Workflows
+
+### Fixed
+
+- (GH-119) Update lintinstall Makefile recipe
+- (GH-122) Add project doc.go file
+- (GH-123) Add missing cmd doc file
+
 ## [v0.1.15] - 2022-05-06
 
 ### Overview
@@ -391,7 +421,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.15...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.16...HEAD
+[v0.1.16]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.16
 [v0.1.15]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.15
 [v0.1.14]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.14
 [v0.1.13]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.13
