@@ -21,7 +21,7 @@ func main() {
 	const NagiosLongServiceOutputEnvVar string = "NAGIOS_LONGSERVICEOUTPUT"
 
 	// prepare initial status line
-	statusLineTmpl := "OK: %d environment variables, %d CLI arguments\r\n\r\n"
+	statusLineTmpl := "OK: %d environment variables, %d CLI arguments%[3]s%[3]s"
 
 	numEnvVars := len(os.Environ())
 
@@ -33,12 +33,14 @@ func main() {
 		statusLineTmpl,
 		numEnvVars,
 		numCLIArgs,
+		nagios.CheckOutputEOL,
 	)
 
-	fmt.Printf("Environment variables:\r\n\r\n")
+	fmt.Printf("Environment variables:%[1]s%[1]s", nagios.CheckOutputEOL)
 	fmt.Printf(
-		"NOTE: Skipping emission of %s to help prevent a loop.\r\n\r\n",
+		"NOTE: Skipping emission of %s to help prevent a loop.%[2]s%[2]s",
 		NagiosLongServiceOutputEnvVar,
+		nagios.CheckOutputEOL,
 	)
 
 	origEnvVars := os.Environ()
@@ -57,18 +59,19 @@ func main() {
 		) {
 			continue
 		}
-		fmt.Println(e)
+		fmt.Printf("%s%s", e, nagios.CheckOutputEOL)
 	}
 
-	fmt.Printf("\r\nCLI arguments:\r\n\r\n")
+	fmt.Printf("%[1]sCLI arguments:%[1]s%[1]s", nagios.CheckOutputEOL)
 
 	switch {
 	case numCLIArgs > 1:
 		for num, arg := range os.Args[1:] {
 			fmt.Printf(
-				"Arg %d: %s\r\n",
+				"Arg %d: %s%[3]s",
 				num,
 				arg,
+				nagios.CheckOutputEOL,
 			)
 		}
 	default:
