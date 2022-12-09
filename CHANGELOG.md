@@ -26,6 +26,32 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.17] - 2022-12-09
+
+### Overview
+
+- Bug fixes
+- Dependency updates
+- GitHub Actions Workflows updates
+- built using Go 1.19.4
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.1` to `1.19.4`
+  - `atc0005/go-nagios`
+    - `v0.10.0` to `v0.10.2`
+- (GH-133) Refactor GitHub Actions workflows to import logic
+
+### Fixed
+
+- (GH-138) Fix Makefile Go module base path detection
+- (GH-139) Replace literal/static newlines with pkg constant
+
 ## [v0.1.16] - 2022-09-22
 
 ### Overview
@@ -421,7 +447,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.16...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.17...HEAD
+[v0.1.17]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.17
 [v0.1.16]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.16
 [v0.1.15]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.15
 [v0.1.14]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.14
