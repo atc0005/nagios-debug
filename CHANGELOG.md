@@ -26,6 +26,37 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.1.18] - 2023-04-06
+
+### Overview
+
+- Bug fixes
+- Dependency updates
+- GitHub Actions workflow updates
+- built using Go 1.19.8
+  - Statically linked
+  - Windows (x86, x64)
+  - Linux (x86, x64)
+
+### Added
+
+- (GH-146) Add Go Module Validation, Dependency Updates jobs
+
+### Changed
+
+- Dependencies
+  - `Go`
+    - `1.19.4` to `1.19.8`
+  - `atc0005/go-nagios`
+    - `v0.10.2` to `v0.14.0`
+- (GH-150) Drop `Push Validation` workflow
+- (GH-151) Rework workflow scheduling
+- (GH-153) Remove `Push Validation` workflow status badge
+
+### Fixed
+
+- (GH-162) Update vuln analysis GHAW to use on.push hook
+
 ## [v0.1.17] - 2022-12-09
 
 ### Overview
@@ -447,7 +478,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.17...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.1.18...HEAD
+[v0.1.18]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.18
 [v0.1.17]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.17
 [v0.1.16]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.16
 [v0.1.15]: https://github.com/atc0005/nagios-debug/releases/tag/v0.1.15
