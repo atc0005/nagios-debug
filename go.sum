@@ -1,7 +1,7 @@
-github.com/atc0005/go-nagios v0.14.0 h1:xtOa/MJDvk4SSicAV5B8VlyiHu/85+Ode/aUGj99euw=
-github.com/atc0005/go-nagios v0.14.0/go.mod h1:U9k9W4hUskZhVCo9vGBILW2+eWRZh1ZaA+SN5g69CbY=
+github.com/atc0005/go-nagios v0.15.0 h1:CxAR6fLXkSvMFZxsYh/HSErp/oad94vl9j65RcZaOjA=
+github.com/atc0005/go-nagios v0.15.0/go.mod h1:TlE2JBMuI64lM01MqobahTA94hgtVefvEzyKtvIHToo=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
-github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
+github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
