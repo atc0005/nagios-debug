@@ -26,6 +26,18 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.4] - 2024-01-19
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-248) canary: bump golang from 1.20.11 to 1.20.12 in /dependabot/docker/go
+- (GH-254) canary: bump golang from 1.20.12 to 1.20.13 in /dependabot/docker/go
+- (GH-250) docker: bump atc0005/go-ci from go-ci-oldstable-build-v0.14.1 to go-ci-oldstable-build-v0.14.2 in /dependabot/docker/builds
+- (GH-256) docker: bump atc0005/go-ci from go-ci-oldstable-build-v0.14.2 to go-ci-oldstable-build-v0.14.3 in /dependabot/docker/builds
+- (GH-253) ghaw: bump github/codeql-action from 2 to 3
+
 ## [v0.2.3] - 2023-11-15
 
 ### Changed
@@ -571,7 +583,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.3...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.4...HEAD
+[v0.2.4]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.4
 [v0.2.3]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.3
 [v0.2.2]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.2
 [v0.2.1]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.1
