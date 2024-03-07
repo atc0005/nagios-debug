@@ -26,6 +26,22 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.6] - 2024-03-07
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-296) Add todo/release label to "Go Runtime" PRs
+- (GH-291) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.15.2 to go-ci-oldstable-build-v0.15.3 in /dependabot/docker/builds
+- (GH-294) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.15.3 to go-ci-oldstable-build-v0.15.4 in /dependabot/docker/builds
+- (GH-287) canary: bump golang from 1.21.6 to 1.21.7 in /dependabot/docker/go
+- (GH-285) docker: bump atc0005/go-ci from go-ci-oldstable-build-v0.15.0 to go-ci-oldstable-build-v0.15.2 in /dependabot/docker/builds
+- (GH-292) Go Runtime: Bump golang from 1.21.7 to 1.21.8 in /dependabot/docker/go
+- (GH-289) Update Dependabot PR prefixes (redux)
+- (GH-288) Update Dependabot PR prefixes
+- (GH-286) Update project to Go 1.21 series
+
 ## [v0.2.5] - 2024-02-16
 
 ### Changed
@@ -597,7 +613,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.5...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.6...HEAD
+[v0.2.6]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.6
 [v0.2.5]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.5
 [v0.2.4]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.4
 [v0.2.3]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.3
