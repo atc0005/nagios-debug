@@ -26,6 +26,21 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.9] - 2024-06-07
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-327) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.20.4 to go-ci-oldstable-build-v0.20.5 in /dependabot/docker/builds
+- (GH-328) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.20.5 to go-ci-oldstable-build-v0.20.6 in /dependabot/docker/builds
+- (GH-333) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.20.6 to go-ci-oldstable-build-v0.20.7 in /dependabot/docker/builds
+- (GH-332) Go Runtime: Bump golang from 1.21.10 to 1.21.11 in /dependabot/docker/go
+
+### Fixed
+
+- (GH-330) Remove inactive maligned linter
+
 ## [v0.2.8] - 2024-05-13
 
 ### Changed
@@ -637,7 +652,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.8...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.9...HEAD
+[v0.2.9]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.9
 [v0.2.8]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.8
 [v0.2.7]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.7
 [v0.2.6]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.6
