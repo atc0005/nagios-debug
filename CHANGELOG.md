@@ -26,6 +26,24 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.11] - 2024-08-22
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-355) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.4 to go-ci-oldstable-build-v0.21.5 in /dependabot/docker/builds
+- (GH-358) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.5 to go-ci-oldstable-build-v0.21.6 in /dependabot/docker/builds
+- (GH-360) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.6 to go-ci-oldstable-build-v0.21.7 in /dependabot/docker/builds
+- (GH-364) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.7 to go-ci-oldstable-build-v0.21.8 in /dependabot/docker/builds
+- (GH-369) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.8 to go-ci-oldstable-build-v0.21.9 in /dependabot/docker/builds
+- (GH-372) Go Runtime: Bump golang from 1.21.12 to 1.22.6 in /dependabot/docker/go
+- (GH-371) Update project to Go 1.22 series
+
+#### Other
+
+- (GH-361) Push `REPO_VERSION` var into containers for builds
+
 ## [v0.2.10] - 2024-07-10
 
 ### Changed
@@ -664,7 +682,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.10...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.11...HEAD
+[v0.2.11]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.11
 [v0.2.10]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.10
 [v0.2.9]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.9
 [v0.2.8]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.8
