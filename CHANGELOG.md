@@ -26,6 +26,26 @@ The following types of changes will be recorded in this file:
 
 - placeholder
 
+## [v0.2.13] - 2025-04-16
+
+### Changed
+
+#### Dependency Updates
+
+- (GH-402) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.15 to go-ci-oldstable-build-v0.21.16 in /dependabot/docker/builds
+- (GH-411) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.16 to go-ci-oldstable-build-v0.21.17 in /dependabot/docker/builds
+- (GH-416) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.17 to go-ci-oldstable-build-v0.21.18 in /dependabot/docker/builds
+- (GH-450) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.21.18 to go-ci-oldstable-build-v0.22.8 in /dependabot/docker/builds
+- (GH-455) Build Image: Bump atc0005/go-ci from go-ci-oldstable-build-v0.22.8 to go-ci-oldstable-build-v0.22.9 in /dependabot/docker/builds
+- (GH-456) Disable Dependabot automatic PR rebasing
+- (GH-405) Go Dependency: Bump github.com/atc0005/go-nagios from 0.17.1 to 0.18.0
+- (GH-407) Go Dependency: Bump github.com/atc0005/go-nagios from 0.18.0 to 0.18.1
+- (GH-412) Go Dependency: Bump github.com/atc0005/go-nagios from 0.18.1 to 0.19.0
+- (GH-452) Go Runtime: Bump golang from 1.22.10 to 1.23.8 in /dependabot/docker/go
+- (GH-413) Go Runtime: Bump golang from 1.22.9 to 1.22.10 in /dependabot/docker/go
+- (GH-447) go.mod: update minimum Go version to 1.23.0
+- (GH-438) Update project to Go 1.23 series
+
 ## [v0.2.12] - 2024-11-13
 
 ### Changed
@@ -695,7 +715,8 @@ troubleshoot other/"real" service checks.
 
 - Go modules support (vs classic `GOPATH` setup)
 
-[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.12...HEAD
+[Unreleased]: https://github.com/atc0005/nagios-debug/compare/v0.2.13...HEAD
+[v0.2.13]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.13
 [v0.2.12]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.12
 [v0.2.11]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.11
 [v0.2.10]: https://github.com/atc0005/nagios-debug/releases/tag/v0.2.10
